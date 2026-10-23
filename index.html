@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansible Technologies | Digital Engineering & Consulting</title>
+  
+  <!-- Fonts: Playfair Display for Editorial Titles + Plus Jakarta Sans for UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            wine: {
+              900: '#3a0c1a',
+              800: '#521429',
+              700: '#6b1d38',
+              600: '#8b264a',
+              500: '#a33058',
+              100: '#f9edf2',
+            },
+            brandDark: '#0a0c10',
+            brandSurface: '#12151e',
+            brandCard: '#181c28',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #0a0c10;
+      color: #f1f5f9;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .brand-heading {
+      font-family: 'Playfair Display', serif;
+      letter-spacing: -0.02em;
+    }
+
+    .editorial-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+    }
+
+    .wine-gradient-btn {
+      background: linear-gradient(135deg, #6b1d38 0%, #8b264a 100%);
+      transition: all 0.3s ease;
+    }
+
+    .wine-gradient-btn:hover {
+      background: linear-gradient(135deg, #8b264a 0%, #a33058 100%);
+      box-shadow: 0 8px 25px rgba(107, 29, 56, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .wine-glass-card {
+      background: rgba(24, 28, 40, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(139, 38, 74, 0.2);
+    }
+
+    .wine-glass-card:hover {
+      border-color: rgba(139, 38, 74, 0.5);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-wine-700 selection:text-white">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0a0c10]/90 backdrop-blur-md border-b border-wine-900/40 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="https://res.cloudinary.com/upload101/image/upload/v1792785718/ansible-logo_ddxve6.png" alt="Ansible Technologies" class="h-9 w-auto object-contain">
+        <span class="editorial-label text-sm font-semibold tracking-widest text-white hidden sm:inline">Ansible Technologies</span>
+      </a>
+      <div class="flex items-center gap-6">
+        <a href="#services" class="text-xs uppercase tracking-widest text-gray-300 hover:text-white transition">Capabilities</a>
+        <a href="#configurator" class="text-xs uppercase tracking-widest text-gray-300 hover:text-white transition hidden md:inline">Scope Estimator</a>
+        <a href="mailto:wafulasammie@gmail.com" class="wine-gradient-btn px-5 py-2.5 rounded-sm text-xs uppercase tracking-widest font-semibold text-white">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="pt-36 pb-20 px-6 max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center min-h-[85vh]">
+    <div class="lg:col-span-7 space-y-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 bg-wine-900/60 border border-wine-700/50 rounded-full">
+        <span class="w-2 h-2 rounded-full bg-wine-500 animate-pulse"></span>
+        <span class="editorial-label text-[10px] text-wine-100">Product Design & Engineering</span>
+      </div>
+      
+      <h1 class="brand-heading text-4xl sm:text-6xl lg:text-7xl font-normal leading-[1.1] text-white">
+        Leverage Technology. <br>
+        <span class="italic text-wine-500 font-normal">Turn ideas into reality.</span>
+      </h1>
+
+      <p class="text-gray-300 text-base sm:text-lg max-w-xl font-light leading-relaxed">
+        We partner with ambitious enterprises and founders to engineer scalable software solutions, modern digital infrastructure, robust financial checkouts, and enterprise cloud applications.
+      </p>
+
+      <div class="pt-4 flex flex-wrap gap-4 items-center">
+        <a href="#configurator" class="wine-gradient-btn px-8 py-4 rounded-sm text-xs font-bold uppercase tracking-widest text-white shadow-lg">
+          Configure Your System
+        </a>
+        <a href="mailto:wafulasammie@gmail.com" class="px-8 py-4 bg-transparent border border-gray-700 hover:border-wine-600 rounded-sm text-xs font-semibold uppercase tracking-widest text-gray-300 hover:text-white transition">
+          Direct Inquiry &rarr;
+        </a>
+      </div>
+    </div>
+
+    <!-- Editorial Image Grid Feature -->
+    <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+      <div class="space-y-4">
+        <div class="wine-glass-card p-6 rounded-sm space-y-3">
+          <div class="text-wine-500 text-2xl font-serif">01</div>
+          <h3 class="editorial-label text-xs text-white">Enterprise Software</h3>
+          <p class="text-xs text-gray-400">Custom web applications and distributed system architectures built for high concurrency.</p>
+        </div>
+        <div class="wine-glass-card p-6 rounded-sm space-y-3">
+          <div class="text-wine-500 text-2xl font-serif">02</div>
+          <h3 class="editorial-label text-xs text-white">Mobile Engineering</h3>
+          <p class="text-xs text-gray-400">Cross-platform mobile platforms for iOS and Android with offline-first persistence.</p>
+        </div>
+      </div>
+      <div class="space-y-4 pt-8">
+        <div class="wine-glass-card p-6 rounded-sm space-y-3">
+          <div class="text-wine-500 text-2xl font-serif">03</div>
+          <h3 class="editorial-label text-xs text-white">Fintech & Payments</h3>
+          <p class="text-xs text-gray-400">Seamless checkout integrations, multi-currency processing, and automated ledger engines.</p>
+        </div>
+        <div class="wine-glass-card p-6 rounded-sm space-y-3">
+          <div class="text-wine-500 text-2xl font-serif">04</div>
+          <h3 class="editorial-label text-xs text-white">ERP Systems</h3>
+          <p class="text-xs text-gray-400">Centralized resource planning, stock management, and shift reconciliation modules.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Capabilities Section -->
+  <section id="services" class="py-24 bg-brandSurface border-t border-wine-900/30 px-6">
+    <div class="max-w-7xl mx-auto space-y-16">
+      <div class="text-center space-y-4 max-w-2xl mx-auto">
+        <p class="editorial-label text-xs text-wine-500 font-semibold">Specialized Capabilities</p>
+        <h2 class="brand-heading text-3xl sm:text-5xl text-white">Learn How Tech Can Help You</h2>
+        <div class="w-12 h-0.5 bg-wine-700 mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service Item 1 -->
+        <div class="wine-glass-card p-8 rounded-sm space-y-4">
+          <h3 class="brand-heading text-2xl text-white">Custom Software</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Full-stack web architecture engineered with Next.js, Go, and TypeScript for speed and scalability.</p>
+        </div>
+        <!-- Service Item 2 -->
+        <div class="wine-glass-card p-8 rounded-sm space-y-4">
+          <h3 class="brand-heading text-2xl text-white">Mobile Platforms</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">High-performance native and cross-platform apps built with React Native for seamless UX.</p>
+        </div>
+        <!-- Service Item 3 -->
+        <div class="wine-glass-card p-8 rounded-sm space-y-4">
+          <h3 class="brand-heading text-2xl text-white">ERP & Workflows</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Tailored operations software for inventory tracking, business analytics, and shift management.</p>
+        </div>
+        <!-- Service Item 4 -->
+        <div class="wine-glass-card p-8 rounded-sm space-y-4">
+          <h3 class="brand-heading text-2xl text-white">E-Commerce Platforms</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Custom digital storefronts with optimized cart mechanics and offline order synchronization.</p>
+        </div>
+        <!-- Service Item 5 -->
+        <div class="wine-glass-card p-8 rounded-sm space-y-4">
+          <h3 class="brand-heading text-2xl text-white">Fintech & Checkouts</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Secure payment gateways, wallet systems, and localized African payment method support.</p>
+        </div>
+        <!-- Service Item 6 -->
+        <div class="wine-glass-card p-8 rounded-sm space-y-4">
+          <h3 class="brand-heading text-2xl text-white">Web Architecture</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Lightning-fast landing pages and brand platforms optimized for global SEO performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Project Estimator / Configurator -->
+  <section id="configurator" class="py-24 px-6 max-w-5xl mx-auto">
+    <div class="wine-glass-card p-8 sm:p-12 rounded-sm border-wine-700/40 space-y-8">
+      <div class="space-y-2 text-center sm:text-left">
+        <p class="editorial-label text-xs text-wine-500">Interactive Scope Estimator</p>
+        <h2 class="brand-heading text-3xl sm:text-4xl text-white">Evaluate Your Technical Needs</h2>
+      </div>
+
+      <form id="scopeForm" class="space-y-6">
+        <div>
+          <label class="block text-xs uppercase tracking-widest text-gray-300 mb-2">Project Category</label>
+          <select id="projType" class="w-full bg-brandDark border border-gray-800 focus:border-wine-600 rounded p-3 text-sm text-white outline-none">
+            <option value="Custom Web App">Custom Web Application</option>
+            <option value="Mobile App">Mobile App (iOS & Android)</option>
+            <option value="ERP System">Enterprise ERP & Inventory System</option>
+            <option value="Fintech Platform">Fintech & Payment Gateway</option>
+            <option value="E-Commerce">E-Commerce Platform</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs uppercase tracking-widest text-gray-300 mb-2">Target Timeline</label>
+          <div class="grid grid-cols-3 gap-3">
+            <button type="button" class="time-btn border border-wine-700 bg-wine-900/30 text-white p-3 text-xs uppercase tracking-wider rounded" onclick="selectTime(this, 'Rapid (2-4 Weeks)')">2-4 Weeks</button>
+            <button type="button" class="time-btn border border-gray-800 text-gray-400 p-3 text-xs uppercase tracking-wider rounded" onclick="selectTime(this, 'Standard (1-2 Months)')">1-2 Months</button>
+            <button type="button" class="time-btn border border-gray-800 text-gray-400 p-3 text-xs uppercase tracking-wider rounded" onclick="selectTime(this, 'Enterprise (3+ Months)')">3+ Months</button>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <p class="text-xs text-gray-400">Direct Inquiries & Project Briefs:</p>
+            <p class="text-sm font-semibold text-wine-500">wafulasammie@gmail.com</p>
+          </div>
+          <button type="button" onclick="sendBrief()" class="wine-gradient-btn px-8 py-3.5 rounded-sm text-xs uppercase tracking-widest font-bold text-white w-full sm:w-auto">
+            Submit Project Brief &rarr;
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brandDark border-t border-wine-900/40 py-12 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <img src="https://res.cloudinary.com/upload101/image/upload/v1792785718/ansible-logo_ddxve6.png" alt="Ansible Technologies" class="h-8 w-auto">
+        <span class="editorial-label text-xs text-gray-400">Ansible Technologies</span>
+      </div>
+      <p class="text-xs text-gray-400">
+        Contact: <a href="mailto:wafulasammie@gmail.com" class="text-wine-500 hover:underline">wafulasammie@gmail.com</a>
+      </p>
+      <p class="text-xs text-gray-400">
+        &copy; 2026 Ansible Technologies. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    let selectedTimeline = 'Rapid (2-4 Weeks)';
+
+    function selectTime(btn, val) {
+      document.querySelectorAll('.time-btn').forEach(b => {
+        b.classList.remove('border-wine-700', 'bg-wine-900/30', 'text-white');
+        b.classList.add('border-gray-800', 'text-gray-400');
+      });
+      btn.classList.add('border-wine-700', 'bg-wine-900/30', 'text-white');
+      btn.classList.remove('border-gray-800', 'text-gray-400');
+      selectedTimeline = val;
+    }
+
+    function sendBrief() {
+      const proj = document.getElementById('projType').value;
+      const subject = encodeURIComponent(`Project Brief: ${proj}`);
+      const body = encodeURIComponent(`Hello Samuel,\n\nI would like to discuss a project with Ansible Technologies:\n\nProject Category: ${proj}\nTarget Timeline: ${selectedTimeline}\n\nLooking forward to your response.`);
+      window.location.href = `mailto:wafulasammie@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
